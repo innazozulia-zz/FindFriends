@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #fcef9d;
+  font-family: 'STIX Two Text', cursive;
+  color: #737174;
+  text-align: center;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 80px;
+  margin: 0 auto;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+.search{
+  position: relative;
+}
+.fa{
+  position: absolute;
+  top: 3px;
+right: 4px;
+}
+main {
+  max-width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+content {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+aside {
+  text-align: center;
+  width: 20%;
+}
+aside form {
+  margin: 10px;
+}
+content figure {
+  font-size: 22px;
+  width: 20%;
+  text-align: center;
+}
+figcaption p {
+  margin: 0;
+}
+figcaption p:first-child {
+  text-transform: capitalize;
+}
+
+img {
+  border-radius: 30%;
+  margin: 20px auto;
+}
+
+.sort {
+  font-weight: bold;
+  padding: 10px;
+  /*margin: 5%;*/
+  text-align: center;
+}
+a {
+  margin: 0;
+  font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  aside {
+    width: 100%;
+  }
+
+  content figure {
+    width: 100%;
+    margin: 10px auto;
+  }
+  img {
+    margin: 0 auto;
+  }
+  figcaption {
+    padding: 0;
+  }
+  aside span {
+    margin: 5px;
+    font-size: 14px;
+  }
+}
